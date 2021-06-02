@@ -26,5 +26,16 @@ Ansonsten werden Webserverlogs mit der Zeit komprimiert und nach ein paar Tagen 
 Das erspart uns einerseits das Aufräumen alter Antworten, andererseits müssen wir uns dann auch aktiv darum kümmern, sie auszulesen.
 Sonst sind sie halt weg.
 
-Die Verwendung diese Software geschieht auf eigene Gefahr.
+## Hosting
+
+Die Software kann überall dort eingesetzt werden, wo es PHP 7 und php-yaml gibt.
+Man kann es auch im LAN einsetzen mittels des built-in-Webservers von PHP.
+
+Dazu einfach im Ordner "fragebogen" dies starten:
+
+    php -S 127.0.0.1:8080 -t . 2>&1 | tee -a survey.log 
+
+## Disclaimer
+
+Die Verwendung diese Software geschieht natürlich auf eigene Gefahr.
 
