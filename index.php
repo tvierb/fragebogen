@@ -17,17 +17,23 @@ if (! array_key_exists("formkey", $_SESSION)) {
    $_SESSION["formkey"] = uniqid();
 }
 
+if (array_key_exists( "thankyou", $_SESSION))
+{
+   print "<div class=\"thankyou\">Danke für deine Teilnahme!</div>\n";
+   unset( $_SESSION["thankyou"] );
+}
+
 if (array_key_exists( "formkey", $_POST))
 {
     if ($_POST["formkey"] === $_SESSION["formkey"])
     {
        $foo = $_POST;
        unset( $foo["formkey"] );
-       // print "<pre>" . var_export($foo, 1) . "</pre>\n";
-       error_log(json_encode( ["surveyresult" => $foo] ));
-       print "Vielen Dank für deine Teilnahme!";
+       error_log(json_encode( ["surveyresult" => $foo] )); // "Speichern" im Webserverlog
+       $_SESSION["thankyou"] = 1;
+       header("Location: index.php");
+       exit();
     }
-    exit();
 }
 
 $uid = $_GET[ "uid" ];
