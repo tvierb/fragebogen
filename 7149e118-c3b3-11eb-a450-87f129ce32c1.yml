@@ -2,7 +2,7 @@
 
 seiten:
    seite1:
-      titel: "Umfrage zur Qualitaet dieses Fragebogens"
+      titel: "Umfrage zur Qualität dieses Fragebogens"
       fragen:
           - {id: "p1-1", titel: "Gefällt dir die grafische Aufmachung?", typ: "jne"}
           - {id: "p1-2", titel: "Bist du intelligent?", typ: "jn"}
