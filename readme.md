@@ -23,7 +23,7 @@ Denn jeder Surfer kann die Formulare in seinem Browser verändern.
 Wenn man diese Software ernsthaft einsetzen möchte, sollte man ggf. noch irgendwie dafür sorgen, dass niemand zu viele POSTs pro Zeitintervall senden kann.
 
 Ansonsten werden Webserverlogs mit der Zeit komprimiert und nach ein paar Tagen auch automatisch gelöscht.
-Das erspart und einerseits das Aufräumen alter Antworten, andererseits müssen wir uns dann auch aktiv darum kümmern, sie auszulesen.
+Das erspart uns einerseits das Aufräumen alter Antworten, andererseits müssen wir uns dann auch aktiv darum kümmern, sie auszulesen.
 Sonst sind sie halt weg.
 
 Die Verwendung diese Software geschieht auf eigene Gefahr.
