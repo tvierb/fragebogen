@@ -4,8 +4,9 @@ seiten:
    seite1:
       titel: "Umfrage zur Qualitaet dieses Fragebogens"
       fragen:
-          - {id: "p1-1", titel: "Gefaellt dir die grafische Aufmachung?", typ: "jne"}
+          - {id: "p1-1", titel: "Gefällt dir die grafische Aufmachung?", typ: "jne"}
           - {id: "p1-2", titel: "Bist du intelligent?", typ: "jn"}
           - {id: "p1-3", titel: "Wie lecker findest du Kartoffeln mit Quark?", typ: "schlecht_gut", variations: 7}
           - {id: "p1-4", titel: "Was ist dein Lieblingseditor?", typ: "radio", options: ["vim", "joe", "nano", "visualstudio code", "SublimeText", "geany", "anderer Bullshit"]}
+          - {id: "p1-5", titel: "Was magst du?", typ: "multi", options: ["essen", "trinken", "perl", "vim", "forth"]}
 
